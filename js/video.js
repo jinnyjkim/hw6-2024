@@ -66,8 +66,6 @@ document.querySelector("#mute").addEventListener("click", function() {
 
 
 // volume slider
-document.querySelector("#volume").innerHTML = document.querySelector("#slider").value;
-
 document.querySelector("#slider").oninput = function() {
 	document.querySelector("#volume").innerHTML = this.value + "%";
 }
